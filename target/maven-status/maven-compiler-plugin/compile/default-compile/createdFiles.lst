@@ -1,0 +1,6 @@
+org/sidorov/remoteserver/controller/GeneratePersonController.class
+org/sidorov/remoteserver/entity/Person.class
+org/sidorov/remoteserver/RemoteServerApplication.class
+org/sidorov/remoteserver/service/PersonService.class
+org/sidorov/remoteserver/controller/ReadinessLivenessController.class
+org/sidorov/remoteserver/repository/PersonRepository.class
