@@ -11,19 +11,19 @@ import java.util.List;
 
 @Tag(name = "Сервис для работы с Person")
 @RestController("person")
+@RequestMapping("person")
 @RequiredArgsConstructor
 public class GeneratePersonController {
 
     private final PersonService personService;
-
-    @GetMapping("/generate-person-list")
-    public List<Person> generatePersonList(@PathParam("count") Long count) {
-        return personService.generateRandomPersonList(count);
-    }
 
     @GetMapping("/generate-person")
     public Person generatePerson() {
         return personService.generateRandomPerson();
     }
 
+    @GetMapping("/generate-person-list")
+    public List<Person> generatePersonList(@PathParam("count") Long count) {
+        return personService.generateRandomPersonList(count);
+    }
 }

@@ -2,8 +2,8 @@ version: "3"
 
 services:
   person-server:
-    image: alexeysidorov/remote-server-image:1.0.1
+    image: alexeysidorov/remote-server-image:1.0.2
     build: .
     ports:
-      - "8081:8081"
+      - "8082:8082"
     container_name: remote-server-container
