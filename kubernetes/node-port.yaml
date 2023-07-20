@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: remote-node-port
+spec:
+  type: ClusterIP
+  selector:
+    app: remote-server
+  ports:
+    - port: 8082         # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
+      targetPort: 8082   # Optional field.
