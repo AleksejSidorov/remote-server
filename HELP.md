@@ -1,3 +1,6 @@
+# host
+Что бы обратиться к хосту прописанному в ingress локально - нужно прописать его в хостах на машине
+
 # Getting Started
 
 ### Reference Documentation
